@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" href="img/home.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+<body>
+    <!--==========cursor=========-->
+    <div class="cursor"></div>
+   <!--=========scroll to top button===========--> 
+   <div class="scrollToTop-btn flex-center">
+    <i class="fas fa-arrow-up" onclick="audio7.play();"></i>
+   </div>
+   <!--=========light/dark theme button===========--> 
+   <div class="theme-btn flex-center">
+    <i class="fas fa-moon" onclick="audio9.play();"></i>
+    <i class="fas fa-sun"onclick="audio8.play();"></i>
+   </div>
+   <div class="navigation-phone">
+    <ul>
+        <li class="phone active">
+            <a href="#home" title="HOME"  onclick="audio1.play();"><span class="phone-icon"><ion-icon name="home-outline"></ion-icon></span></a>
+        </li>
+        <li class="phone">
+            <a href="#about" title="ABOUT"  onclick="audio2.play();"><span class="phone-icon"><ion-icon name="person-outline"></ion-icon></span></a>
+        </li>
+        <li class="phone">
+            <a href="#skills" title="SKILLS"  onclick="audio3.play();"><span class="phone-icon"><ion-icon name="code-slash-outline"></ion-icon></span></a>
+        </li>
+        <li class="phone">
+            <a href="#projects" title="PROJECTS"  onclick="audio4.play();"><span class="phone-icon"><ion-icon name="laptop-outline"></ion-icon></span></a>
+        </li>
+        <li class="phone">
+            <a href="#portfolio" title="PORTFOLIO"  onclick="audio5.play();"><span class="phone-icon"><ion-icon name="id-card-outline"></ion-icon></span></a>
+        </li>
+        <li class="phone">
+            <a href="#contact" title="CONTACT"  onclick="audio6.play();"><span class="phone-icon"><ion-icon name="call-outline"></ion-icon></span></a>
+        </li>
+        <div class="indicator"></div>
+    </ul>
+</div>
+   <!--=========header===========--> 
+   <header>
+    <div class="nav-bar">
+        <a href="#" class="logo"><img src="img/logo.png"></a>
+        <div class="navigation">
+            <div class="nav-items">
+                <div class="nav-close-btn"><i class="fa-solid fa-xmark"></i></div>
+                <a  class="active" id="one" onclick="audio1.play();" href="#home">Home</a>
+                <a  class="two" onclick="audio2.play();"  href="#about">About</a>
+                <a  class="three" onclick="audio3.play();"  href="#skills">Skills</a>
+                <a  class="four" onclick="audio4.play();"  href="#projects">Projects</a>
+                <a  class="five" onclick="audio5.play();"  href="#portfolio">Portfolio</a>
+                <a  class="six" onclick="audio6.play();"  href="#contact">Contact</a>
+                <audio id="home-sound" preload="auto">
+                    <source src="sound/HOME.mp3">
+                </audio>
+                <audio id="about-sound" preload="auto">
+                    <source src="sound/ABOUT.mp3">
+                </audio>
+                <audio id="skills-sound" preload="auto">
+                    <source src="sound/skills.mp3">
+                </audio>
+                <audio id="projects-sound" preload="auto">
+                    <source src="sound/projects.mp3">
+                </audio>
+                <audio id="portfolio-sound" preload="auto">
+                    <source src="sound/portfolio.mp3">
+                </audio>
+                <audio id="contact-sound" preload="auto">
+                    <source src="sound/contact.mp3">
+                </audio>
+                <audio id="logo-sound" preload="auto">
+                    <source src="sound/logo.mp3">
+                </audio>
+            </div>
+        </div>
+        <dv class="nav-menu-btn"><i class="fa-solid fa-bars-staggered"></i></div>
+    </div>
+   </header>
+   <!--=========home section===========--> 
+   <section class="home flex-center" id="home">
+    <div class="home-container">
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/ayush-katwal-368955267/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/ayush06019"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="info">
+            <h2>Hi, I am Ayush Katwal</h2>
+            <h3>full-stack Developer</h3>
+            <p>I create can stunning websites for your business, Experienced in web design and development.</p>
+            <a href="#contact" class="btn">Conatct Me   <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="home-img">
+            <img src="img/home.png" alt="image">
+        </div>
+    </div>
+    <a href="#about" class="scroll-down">Scroll Down<i class="fa-solid fa-arrow-down"></i></a>
+   </section>
+   <!--=========about section===========--> 
+   <section class="about section" id="about">
+    <div class="container flex-center">
+        <h1 class="section-title-01">About Me</h1>
+        <h2 class="section-title-02">About Me</h2>
+        <div class="content flex-center">
+        <div class="about-img">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="about-info">
+            <div class="description">
+                <h3>I'm Ayush Katwal</h3>
+                <h4>A Lead <span>Full-Stack Developer</span> based in <span>India</span></h4>
+                <p>I design amd develop services for customers specializing creating stylish, modren websites, web services and online stores. My passion is to design user Experiences through meaningful interaction. Check out my portfolio</p>
+            </div>
+            <ul class="professional-list">
+                <li class="list-item">
+                    <h3>F</h3>
+                    <span>Fresher</span>
+                </li>
+                <li class="list-item">
+                    <h3>9+</h3>
+                    <span>CGPA</span>
+                </li>
+            </ul>
+            <a href="Ayush Katwal.pdf" download class="btn">Download CV <i class="fa-solid fa-download"></i></a>
+        </div>
+    </div>
+    </div>
+   </section>
+   <!--=========skills section===========-->
+   <section class="skills section" id="skills">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Skills</h1>
+        <h2 class="section-title-02">Skills</h2>
+        <div class="content">
+            <div class="skills-discription">
+                <h3>Education & Skills</h3>
+                <p>B.tech Information technology (IT)</p>
+            </div>
+            <div class="skills-info education-all">
+                <div class="education">
+                    <h4><label>Education</label></h4>
+                    <ul class="edu-list">
+                        <li class="item">
+                            <span class="year">2021-2025</span><br>
+                            <span>Information Technolgy (IT)</span>
+                            <p><span>UNIVERSITY INSTITUTE OF TECHNOLOGY (UIT)</span>
+                                Shimla Himachal Pradesh (HPU)</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">Technical Team</span>
+                            <p>Working as a technical team member in college University
+                                Insititute of Technology (Shimla)</p><span>as Web Designer, Coder, video editor.</span>
+                        </li>
+                        <!-- <li class="item">
+                            <span class="year">2-july to 2-sep</span>
+                            <p><span>Intership#######</span>Link</p>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="education">
+                    <h4><label>Skills</label></h4>
+                    <ul class="bars">
+                        <li class="bar">
+                            <div class="info">
+                                <span>HTML</span>  
+                                <span>95%</span>  
+                            </div>
+                            <div class="line html"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>CSS</span>  
+                                <span>80%</span>  
+                            </div>
+                            <div class="line css"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>JAVA SCRIPT</span>  
+                                <span>70%</span>  
+                            </div>
+                            <div class="line javascript"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>JQUERY</span>  
+                                <span>75%</span>  
+                            </div>
+                            <div class="line jquery"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>PHP</span>  
+                                <span>90%</span>  
+                            </div>
+                            <div class="line php"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h4><label>Frameworks</label></h4>
+                    <ul class="bars">
+                        <li class="bar">
+                            <div class="info">
+                                <span>Bootstrap</span>  
+                                <span>90%</span>  
+                            </div>
+                            <div class="line bootstrap"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>React</span>  
+                                <span>60%</span>  
+                            </div>
+                            <div class="line react"></div>
+                        </li>  <li class="bar">
+                            <div class="info">
+                                <span>.Net</span>  
+                                <span>70%</span>  
+                            </div>
+                            <div class="line dotnet"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Angular</span>  
+                                <span>50%</span>  
+                            </div>
+                            <div class="line angular"></div>
+                        </li>
+                        <div class="framework-icons">
+                            <a href="#"><i class="fa-brands fa-bootstrap"></i></a>
+                            <a href="#"><i class="fa-brands fa-react"></i></a>
+                            <a href="#"><i class="fa-brands fa-angular"></i></a>
+                        </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!--=========project section===========--> 
+   <section class="projects section" id="projects">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Projects</h1>
+        <h2 class="section-title-02">Projects</h2>
+        <div class="content">
+            <div class="projects-discription">
+                <h3>My Projects</h3>
+            </div>
+            <ul class="projects-lists">
+                <li class="projects-container">
+                  <div class="project-card">
+                    <i class="fa-solid fa-signature"></i>
+                    <h3>Jarvis-AI</h3>
+                    <div class="learn-more-btn">Learn More <i class="fa-solid fa-caret-up"></i></div>
+                  </div> 
+                  <div class="project-modal flex-center">
+                    <div class="project-modal-body">
+                        <i class="fas fa-times modal-close-btn"></i>
+                        <h3>Jarvis-AI</h3>
+                        <h4> What is jarvis-AI ?</h4>
+                        <p>JARVIS is my AI assistant. I made jarvis using multiple languages like Html, CSS, JavaScript and python with same dataBase. </p>
+                        <h4></h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Open command to open apps</li>
+                            <li><i class="fas fa-check-circle"></i> Activate with the JARVIS.</li>
+                            <li><i class="fas fa-check-circle"></i> Play command for songs.</li>
+                            <li> <a href="https://github.com/ayush06019/jarvis-ai">Source Code</a> </li>
+                        </ul>
+                    </div>
+                  </div> 
+                </li>
+                <li class="projects-container">
+                    <div class="project-card">
+                        <i class="fa-solid fa-gamepad"></i>
+                      <h3>Games</h3>
+                      <div class="learn-more-btn">Learn More <i class="fa-solid fa-caret-up"></i></div>
+                    </div> 
+                    <div class="project-modal flex-center">
+                      <div class="project-modal-body">
+                          <i class="fas fa-times modal-close-btn"></i>
+                          <h3>Snake Game</h3>
+                          <h4> What is snake game ?</h4>
+                          <p>In this game, there is a snake and food. We have to feed snake using the arrows keys in you keyboard.</p>
+                          <h4></h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Made in Html, CSS, Js.</li>
+                              <li><i class="fas fa-check-circle"></i> Size and speed increase.</li>
+                              <li><i class="fas fa-check-circle"></i> Game Over if boundary collison.</li>
+                              <li> <a href="https://github.com/ayush06019/snake-game">Source Code</a> </li>
+                          </ul>
+                      </div>
+                    </div> 
+                  </li>
+                  <li class="projects-container">
+                    <div class="project-card">
+                        <i class="fa-brands fa-autoprefixer"></i>
+                      <h3>WebSites </h3>
+                      <div class="learn-more-btn">Learn More <i class="fa-solid fa-caret-up"></i></div>
+                    </div> 
+                    <div class="project-modal flex-center">
+                      <div class="project-modal-body">
+                          <i class="fas fa-times modal-close-btn"></i>
+                          <h3>Movie WebSite</h3>
+                          <h4> ArWatch website</h4>
+                          <p> I made a movie website name ArWatch. In this website, you can see movies online and also offline.</p>
+                          <h4></h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Made in Html, css, Js.</li>
+                              <li><i class="fas fa-check-circle"></i> Search option to find movies.</li>
+                              <li><i class="fas fa-check-circle"></i> Online/Offline both Avilables.</li>
+                              <li> <a href="https://github.com/ayush06019/movie-website">Source Code</a> </li>
+                          </ul>
+                      </div>
+                    </div> 
+                  </li>
+                  <li class="projects-container">
+                    <div class="project-card">
+                        <i class="fa-solid fa-clapperboard"></i>
+                      <h3>3D Modals</h3>
+                      <div class="learn-more-btn">Learn More <i class="fa-solid fa-caret-up"></i></div>
+                    </div> 
+                    <div class="project-modal flex-center">
+                      <div class="project-modal-body">
+                          <i class="fas fa-times modal-close-btn"></i>
+                          <h3>3D Modals</h3>
+                          <h4> Blender & Figma designs</h4>
+                          <p>I made multiple graphics, charactars designs etc.</p>
+                          <h4></h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> transfrom, scale, rotate, etc .</li>
+                              <li><i class="fas fa-check-circle"></i> Charactars, cars models.</li>
+                              <li><i class="fas fa-check-circle"></i> Shading, animation, video edits.</li>
+                              <li> <a href="img/1715666567783.jpg">Models Image</a> </li>
+                          </ul>
+                      </div>
+                    </div> 
+                  </li>
+            </ul>
+        </div>
+    </div>
+   </section>
+   <!--=========portfollio section===========--> 
+   <section class="portfolio section" id="portfolio">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Portfolio</h1>
+        <h2 class="section-title-02">Portfolio</h2>
+        <div class="content">
+            <div class="portfolio-list">
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+                            <div class="info">
+                                <h3>Web Design</h3>
+                                <span>Development</span>
+                            </div>
+                        </div>
+                        <img src="img/p1.jpg" alt="image">
+                    </div>
+                    <div class="portfolio-modal flex-center">
+                        <div class="portfolio-modal-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Web Design</h3>
+                            <img src="img/p1.jpg">
+                            <p>Web design is the creation of websites and pages to reflect a company's brand and information and ensure a user-friendly experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+                            <div class="info">
+                                <h3 >Graphic Designer</h3>
+                                <span>models</span>
+                            </div>
+                        </div>
+                        <img src="img/p6.jpg" alt="image">
+                    </div>
+                    <div class="portfolio-modal flex-center">
+                        <div class="portfolio-modal-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Graphic Design</h3>
+                            <img src="img/p6.jpg">
+                            <p>This quote made me realize that thinking, collecting your thoughts, and then making efforts to visualize those thoughts, leads to meaningful, deep, and relatable designs. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+                            <div class="info">
+                                <h3>Game Design</h3>
+                                <span>Development</span>
+                            </div>
+                        </div>
+                        <img src="img/p2.jpg" alt="image">
+                    </div>
+                    <div class="portfolio-modal flex-center">
+                        <div class="portfolio-modal-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Game Design</h3>
+                            <img src="img/p2.jpg">
+                            <p>People who know how to make games need to start focusing on the task of making real life better for as many people as possible</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+                            <div class="info">
+                                <h3>Coding</h3>
+                                <span>Developer</span>
+                            </div>
+                        </div>
+                        <img src="img/p3.png" alt="image">
+                    </div>
+                    <div class="portfolio-modal flex-center">
+                        <div class="portfolio-modal-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Coding</h3>
+                            <img src="img/p3.png">
+                            <p>Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+                            <div class="info">
+                                <h3>App Design</h3>
+                                <span>Development</span>
+                            </div>
+                        </div>
+                        <img src="img/p4.jpg" alt="image">
+                    </div>
+                    <div class="portfolio-modal flex-center">
+                        <div class="portfolio-modal-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>App Design</h3>
+                            <img src="img/p4.jpg">
+                            <p>What is app design? App design is an ongoing process comprising user experience (UX) and user interface (UI) elements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+                            <div class="info">
+                                <h3>DataBase</h3>
+                                <span>Development</span>
+                            </div>
+                        </div>
+                        <img src="img/p5.jpg" alt="image">
+                    </div>
+                    <div class="portfolio-modal flex-center">
+                        <div class="portfolio-modal-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>DataBase</h3>
+                            <img src="img/p5.jpg">
+                            <p>In computing, a database is an organized collection of data or a type of data store based on the use of a database management system (DBMS), the software that interacts with end users, applications, and the database itself to capture and analyze the data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!--=========get-in-touct===========--> 
+   <div class="get-in-touch sub-section">
+    <div class="container">
+        <div class="content flex-center">
+            <div class="contact-card flex-center">
+            <div class="title">
+                <h4>let's Talk</h4>
+                <h3>About Your</h3>
+                <h2>Next Project</h2>
+            </div>
+            <div class="contact-btn">
+                <a href="#contact" class="btn">Get in Touch <i class="fas fa-paper-plane"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!--=========contact section===========--> 
+<section class="contact section" id="contact">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Contact</h1>
+        <h2 class="section-title-02">Contact</h2>
+        <div class="content">
+            <div class="contact-left">
+                <h2>Ask your Question</h2>
+                <ul class="contact-list">
+                    <li>
+                        <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+                        <span>78072-30506</span>
+                    </li>
+                    <li>
+                        <h3 class="item-title"><i class="fa-solid fa-envelope"></i> G-mail</h3>
+                        <span><a href="rockstarayush2004@gmail.com">rockstarayush2004@gmail.com</a></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-right">
+                <p>I'm always open for Projects and Web Apps<br><span>Design Work or partnerships</span></p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="d3c73794-4e3d-4463-8520-14c98ce9537b">
+                    <div class="first-row">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="secand-row">
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="third-row">
+                        <textarea name="message" id="" rows="7" placeholder="Message" required></textarea>
+                    </div>
+                    <button class="btn" type="submit">Sent Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+   <!--=========footer===========--> 
+<footer>
+    <div class="footer-container">
+        <div class="about group">
+            <h2>Ayush Katwal</h2>
+            <p>Full-Stack Developer</p>
+            <a href="#about">About Me</a>
+        </div>
+        <div class="hr"></div>
+        <div class="info group">
+            <h3>More</h3>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hr"></div>
+        <div class="follow group">
+        <h3>Follow</h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/ayush-katwal-368955267/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/ayush06019"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        </div>
+    </div>
+    <div class="footer-copyright group">
+        <p>ⓒ 2025 by Ayush Katwal. All rights reserved.</p>
+    </div>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>
